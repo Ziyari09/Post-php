@@ -2,6 +2,7 @@
 session_start();
         if(isset($_POST['submit'])){
             $_SESSION['username_user'] = $_POST['username'];
+            $_SESSION['password_user'] = $_POST['password'];
            header("Location: page.php");    
            exit;
         }
